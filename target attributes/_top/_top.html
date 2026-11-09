@@ -1,0 +1,17 @@
+<!--
+
+
+
+When do you actually need _top instead of _parent?
+You only need _top if you have nested iframes (an iframe inside of another iframe,
+like a Russian nesting doll).
+
+If you have a single iframe (Main Page -> Iframe), then _parent and _top do
+the exact same thing because your main page is both the parent and the top.
+
+But if you have multiple layers of iframes stacked inside each other, _parent 
+would only jump to the iframe directly above it, whereas _top escapes all of them
+and goes straight to the main browser window.
+
+
+-->
