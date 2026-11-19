@@ -57,11 +57,11 @@
 
 
 
-            <!-- Form with required attribute (pedeng required lang, pedeng may type) -->
+            <!-- Form with required attribute -->
 
             <form action="">
                 <label for="email_input">Enter Your email (Required): </label>
-                <input type="email" id="email_input" name="user_email" placeholder="Niggamus@gmail.com" required type="gmail"/>
+                <input type="email" id="email_input" name="user_email" placeholder="Niggamus@gmail.com" required/>
                 <button type="submit">Submit</button>
             </form>
 
@@ -79,6 +79,42 @@
                 <button type="submit">Submit</button>
             </form>
         </main>
+
+
+        <!-- disabled -->
+
+        <form action="">
+                <label for="email_input">Enter Your email (Required): </label>
+                <input type="email"
+                        id="email_input"
+                        name="user_email"
+                        placeholder="Niggamus@gmail.com"
+                        required type="gmail"
+                        minlength="5"
+                        maxlength="5"
+                        disabled/>
+                <button type="submit">Submit</button>
+            </form>
+
+
+        <!-- Readonly -->
+
+
+        <form action="">
+                <label for="email_input">Enter Your email (Required): </label>
+                <input type="email"
+                        id="email_input"
+                        name="user_email"
+                        placeholder="Niggamus@gmail.com"
+                        required type="gmail"
+                        minlength="5"
+                        maxlength="5"
+                        readonly
+                        value="Ng@ga"/>
+                <button type="submit">Submit</button>
+            </form>
+
+
 
     </body>
    
