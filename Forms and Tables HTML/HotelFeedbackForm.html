@@ -55,7 +55,49 @@
 
                 <fieldset>
                     <legend>Why did you choose to stay at our hotel? (Check all that apply)</legend>
+
+                    <input type="checkbox" id="ads" name="choice" value="ads"/>
+                    <label for="ads">Social Media Ads</label>
+
+                    <input type="checkbox" id="recommendation" name="choice" value="recommendation"/>
+                    <label for="recommendation">Personal Recommendation</label>
+
+                    <input type="checkbox" id="location" name="choice" value="location"/>
+                    <label for="location">Location</label>
+
+                    <input type="checkbox" id="reputation" name="choice" value="reputation" checked/>
+                    <label for="reputation">Reputation</label>
+
+                    <input type="checkbox" id="price" name="choice" value="price"/>
+                    <label for="price">Price</label>
                 </fieldset>
+
+                <fieldset>
+                    <legend>Ratings</legend>
+
+                    <label for="service">How was the service?</label>
+                    <select id="service" name="service">
+                        <option value="poor">Poor</option>
+                        <option value="satisfactory">Satisfactory</option>
+                        <option value="good">Good</option>
+                        <option value="very-good">Very Good</option>
+                        <option value="excellent" selected>Excellent</option>
+                    </select>
+
+                    <label for="food">How was the food?</label>
+                    <select id="food" name="food">
+                        <option value="poor">Poor</option>
+                        <option value="satisfactory">Satisfactory</option>
+                        <option value="good">Good</option>
+                        <option value="very-good">Very Good</option>
+                        <option value="excellent" selected>Excellent</option>
+                    </select>
+                </fieldset>
+
+                    <label for="comments">Other Comments?</label>
+                    <textarea id="comments" name="comments" cols="30" rows="10"></textarea>
+
+                    <button type="submit">Submit</button>
             </form>
 
         </main>
