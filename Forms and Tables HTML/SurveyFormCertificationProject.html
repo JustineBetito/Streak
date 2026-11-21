@@ -33,10 +33,49 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>Which option best describes your current role?</legend>
+                    <legend>Your Current Role</legend>
 
-                    <label for=""></label>
+                    <label for="current-role">Which option best describes your current role?</label>
+                    <select id="current-role" name="current-role">
+                        <option value="select-current-role" selected>Select Current Role</option>
+                        <option value="student">Student</option>
+                        <option value="full-time-job">Full Time Job</option>
+                        <option value="full-time-learner">Full Time Learner</option>
+                        <option value="perfer-not-to-say">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
                 </fieldset>
+
+                <fieldset>
+                    <legend>Would you recommend freeCodeCamp to a friend?</legend>
+
+                    <input type="radio" id="definitely" name="would-you-recommend" value="definitely"/>
+                    <label for="definitely">Definitely</label>
+
+                    <input type="radio" id="maybe" name="would-you-recommend" value="maybe"/>
+                    <label for="maybe">Maybe</label>
+
+                    <input type="radio" id="not-sure" name="would-you-recommend" value="not-sure"/>
+                    <label for="not-sure">Not Sure</label>
+
+                    <input type="radio" id="hell nah" name="would-you-recommend" value="hell-nah"/>
+                    <label for="hell-nah">Hell Nahh</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Experience about our service</legend>
+
+                    <label for="favourite-feature">What is your favorite feature of freeCodeCamp?</label>
+                    <select id="favourite-feature" name="favourite-feature">
+                        <option value="select-option" selected>Select an option</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="open-source">Open Source</option>
+                    </select>
+                </fieldset>
+
+                    
            </form>
         
         </main>
